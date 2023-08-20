@@ -1,0 +1,8 @@
+<div class="component-x">
+    <div class="name">
+        <span class="pointer" *ngIf="!editMode" (click)="editName()">{{componentXName}}</span>
+        <input *ngIf="editMode" (blur)="changeName()" type="text" [(ngModel)]="componentXName">
+        <button (click)="addYComponent()">+</button>
+    </div>
+    <app-component-y *ngFor="let componentY of yComponents"></app-component-y>
+</div>

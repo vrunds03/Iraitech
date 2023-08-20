@@ -1,0 +1,15 @@
+<div>
+    <form (ngSubmit)="submitForm()">
+        <div *ngFor="let number of phoneNumbers; let i = index">
+            <div>
+                <label>Phone Number {{ i + 1 }}: </label>
+                <input type="text" [(ngModel)]="number.value" name="phoneNumber{{ i }}" />
+                <button type="button" *ngIf="phoneNumbers.length > 1 && i > 0" (click)="removePhoneNumber(i)">
+                    Remove
+                </button>
+            </div>
+        </div>
+        <button type="button" (click)="addPhoneNumber()">Add another phone number</button>
+        <button type="submit">Submit</button>
+    </form>
+</div>

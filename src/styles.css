@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+.corner {
+    background-color: #000;
+    color: #fff;
+    height: 20vh;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    height: 30px;
+    min-width: 60px;
+    background-color: rgb(66, 66, 211);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+}

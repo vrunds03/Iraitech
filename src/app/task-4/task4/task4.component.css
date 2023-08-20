@@ -1,0 +1,30 @@
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+}
+
+.top {
+    top: 40px;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.center {
+    top: 50%;
+    justify-content: center;
+
+}
+
+.corner {
+    background-color: #000;
+    color: #fff;
+    height: 20vh;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
